@@ -34,7 +34,7 @@
         <section id="download">
             <h2>Скачать KOT-а</h2>
             <ul>
-                <li><a href="https://github.com/CatDevCode/KOT">Скачать для Windows</a></li>
+                <li><a href="https://github.com/CatDevCode/KOT" class="download-link">Скачать для Windows</a></li>
             </ul>
             <p>Инструкции по установке: просто прочитайте на странице загрузки как установить.</p>
         </section>
@@ -42,7 +42,7 @@
         <section id="cofe">
             <h2>Поддержать разработку KOT-а</h2>
             <ul>
-                <li><a href="https://www.donationalerts.com/r/catdevcode">Поддержать!</a></li>
+                <li><a href="https://www.donationalerts.com/r/catdevcode" class="support-link">Поддержать!</a></li>
             </ul>
         </section>
     </main>
@@ -50,6 +50,25 @@
     <footer>
         <p>By CatDevCode. Все права украдены. </p>
     </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // Удаляем наблюдатель после появления
+                    }
+                });
+            });
+    
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 
 </body>
 </html>
