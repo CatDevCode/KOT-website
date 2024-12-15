@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif; /* Использование шрифта Open Sans */
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -33,12 +33,12 @@ nav ul {
     list-style: none;
     padding: 10px 0;
     display: flex;
-    justify-content: center; /* Центрирование элементов навигации */
-    flex-wrap: wrap; /* Перенос элементов на новую строку при необходимости */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0 15px; /* Уменьшение отступов */
+    margin: 0 15px;
     text-transform: uppercase;
     position: relative;
     padding-left: 15px;
@@ -54,7 +54,7 @@ nav a {
     text-decoration: none;
     transition: color 0.3s;
     font-weight: bold;
-    font-family: 'Open Sans', sans-serif; /* Применение шрифта к ссылкам в навигации */
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav a:hover {
@@ -90,7 +90,7 @@ h2 {
     color: #4CAF50;
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 10px;
-    font-family: 'Open Sans', sans-serif; /* Применение шрифта к заголовкам */
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer {
@@ -107,7 +107,7 @@ footer a {
     color: #4CAF50;
     text-decoration: none;
     transition: color 0.3s;
-    font-family: 'Open Sans', sans-serif; /* Применение шрифта к ссылкам в подвале */
+    font-family: 'Open Sans', sans-serif;
 }
 
 footer a:hover {
@@ -118,15 +118,15 @@ footer a:hover {
 /* Адаптивный дизайн */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Вертикальное расположение элементов навигации на мобильных устройствах */
-        align-items: center; /* Центрирование элементов */
+        flex-direction: column;
+        align-items: center;
     }
 
     nav ul li {
-        margin: 10px 0; /* Увеличение отступов между элементами */
+        margin: 10px 0;
     }
 
     header, footer {
-        text-align: center; /* Центрирование текста в заголовке и подвале */
+        text-align: center;
     }
 }
