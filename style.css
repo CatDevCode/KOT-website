@@ -25,7 +25,7 @@ header {
     padding: 30px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.8s ease forwards; /* Применяем анимацию */
+    animation: fadeIn 0.8s ease forwards; 
 }
 
 .banner {
@@ -65,14 +65,14 @@ nav ul li:hover {
 nav a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s, transform 0.3s; /* Добавляем анимацию для ссылки */
+    transition: color 0.3s, transform 0.3s; 
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
 }
 
 nav a:hover {
     color: #4CAF50;
-    transform: scale(1.05); /* Увеличиваем размер при наведении */
+    transform: scale(1.05);
 }
 
 main {
@@ -86,8 +86,8 @@ section {
     margin-bottom: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s;
-    opacity: 0; /* Скрываем секции по умолчанию */
-    animation: fadeIn 0.8s ease forwards; /* Применяем анимацию */
+    opacity: 0; 
+    animation: fadeIn 0.8s ease forwards; 
 }
 
 section:hover {
@@ -133,17 +133,17 @@ footer a:hover {
 
 .download-link, .support-link {
     margin-top: 20px;
-    font-size: 18px; /* Уменьшаем размер текста для больших экранов */
+    font-size: 18px;
 }
 .download-link, .support-link {
-    color: white; /* Устанавливаем белый цвет для ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    transition: color 0.3s; /* Плавный переход цвета */
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s;
 }
 
 .download-link:hover, .support-link:hover {
-    color: #4CAF50; /* Цвет при наведении */
-    text-decoration: underline; /* Подчеркивание при наведении */
+    color: #4CAF50; 
+    text-decoration: underline; 
 }
 
 /* Адаптивный дизайн */
@@ -162,14 +162,13 @@ footer a:hover {
     }
 }
 
-/* Анимация появления при прокрутке */
 section {
-    opacity: 0; /* Скрываем секции по умолчанию */
-    transform: translateY(20px); /* Начальное положение */
-    animation: fadeIn 0.5s forwards; /* Применяем анимацию */
+    opacity: 0; 
+    transform: translateY(20px); 
+    animation: fadeIn 0.5s forwards; 
 }
 
 section.visible {
-    opacity: 1; /* Показать секцию */
-    transform: translateY(0); /* Вернуть на место */
+    opacity: 1;
+    transform: translateY(0); 
 }
